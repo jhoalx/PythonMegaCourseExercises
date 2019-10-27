@@ -54,3 +54,9 @@ student_grades_dictionary = {"John": 9.9, "Salchichón": 8.8, "Rambo": 7.7}
 grades_sum = sum(student_grades_dictionary.values())
 grades_count = len(student_grades_dictionary)
 print("students average grades: ", grades_sum / grades_count)
+
+################################################################################
+# Tuple Types
+# a tuple is basically an immutable list (faster)
+grades_tuple = (7, 8, 9)
+nested_tuple = ((10, 20), (30, 40, 50), (60, 70, 80, 90))
