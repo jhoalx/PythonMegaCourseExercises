@@ -1,0 +1,29 @@
+################################################################################
+monday_temperatures = [9.1, 8.8, 7.5]
+monday_temperatures.append(21.3)  # append object to the end of the list
+
+print(monday_temperatures)
+
+################################################################################
+
+# Clear the list
+monday_temperatures.clear()
+print(monday_temperatures)
+
+################################################################################
+# Recreate the list for sequential execution output purposes
+monday_temperatures = [9.1, 8.8, 7.5]
+
+# Get help for list's index method
+print(help(list.index))
+
+# As help said, lets find the index for the first occurrence (it's 2)
+print(monday_temperatures.index(7.5))
+
+# repeat search, Start looking up at index 1 (8.8) and forward
+# raises error
+# print(monday_temperatures.index(9.1, 1))
+
+# repeat search, Start looking up at index 2 (7.5) and forward,
+# the found index is still 2 doesnt matter if it started looking up at index 2)
+print(monday_temperatures.index(7.5, 2))
