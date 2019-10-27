@@ -70,3 +70,19 @@ workdays = ["Mon", "Tue", "Wed", "Thu", "Fri"]
 weekend = ["Sat", "Sun"]
 workdays.append(weekend[0])
 print(workdays)
+
+################################################################################
+# Access a "slice"
+monday_temperatures.append(10.10)
+monday_temperatures.append(11.11)
+print("monday_temperatures variable value: ", monday_temperatures)
+
+# from 2nd index inclusive to 3rd index exclusive
+sliceVariable = monday_temperatures[1:2]
+print(sliceVariable)
+
+# from 1st index inclusive to 3rd index exclusive
+print(monday_temperatures[0:2])
+
+print(monday_temperatures[:3])  # from 1st index to 4th index exclusive
+print(monday_temperatures[3:])  # from 4th index forward
