@@ -46,3 +46,11 @@ print(help(str.upper))
 
 print(myText.upper())
 print("The Thing That Should Not Be".upper())
+
+################################################################################
+# Dictionaries
+
+student_grades_dictionary = {"John": 9.9, "Salchichón": 8.8, "Rambo": 7.7}
+grades_sum = sum(student_grades_dictionary.values())
+grades_count = len(student_grades_dictionary)
+print("students average grades: ", grades_sum / grades_count)
