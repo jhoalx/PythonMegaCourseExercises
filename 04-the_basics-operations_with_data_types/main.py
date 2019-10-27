@@ -47,3 +47,9 @@ print(seconds)
 seconds.remove(1.10001399445)
 seconds.remove(2.879524862)
 print(seconds)
+
+################################################################################
+# Accessing List Items
+
+print(monday_temperatures.__getitem__(1))
+print(monday_temperatures[1])
