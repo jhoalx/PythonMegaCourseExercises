@@ -33,3 +33,16 @@ print(rangeList)
 
 rangeListWithStep = list(range(1, 10, 2))
 print(rangeListWithStep)
+
+################################################################################
+# dir() is a powerful inbuilt function in Python3,
+# which returns list of the attributes and methods of any object
+# (say functions , modules, strings, lists, dictionaries etc.)
+print(dir(list))
+print(dir(int))
+print(dir(str))
+
+print(help(str.upper))
+
+print(myText.upper())
+print("The Thing That Should Not Be".upper())
