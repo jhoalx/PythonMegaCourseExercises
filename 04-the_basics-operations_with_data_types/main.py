@@ -20,10 +20,19 @@ print(help(list.index))
 # As help said, lets find the index for the first occurrence (it's 2)
 print(monday_temperatures.index(7.5))
 
-# repeat search, Start looking up at index 1 (8.8) and forward
-# raises error
+# repeat search this time for 9.1, Start looking up at index 1 (8.8) and forward
+# raises error because the value is not present
 # print(monday_temperatures.index(9.1, 1))
 
 # repeat search, Start looking up at index 2 (7.5) and forward,
 # the found index is still 2 doesnt matter if it started looking up at index 2)
 print(monday_temperatures.index(7.5, 2))
+
+################################################################################
+# Append item to list
+seconds = [1.2323442655, 1.4534345567, 1.023458894]
+current = 1.10001399445
+seconds.append(current)
+print(seconds)
+
+################################################################################
