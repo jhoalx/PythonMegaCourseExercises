@@ -86,3 +86,14 @@ print(monday_temperatures[0:2])
 
 print(monday_temperatures[:3])  # from 1st index to 4th index exclusive
 print(monday_temperatures[3:])  # from 4th index forward
+
+################################################################################
+# Accessing Items and Slices with Negative Indexes (from right to left)
+print(monday_temperatures[-1])  # prints 5th item
+print(monday_temperatures[-5])  # prints 1st item
+
+# Access negative slices
+# prints 4th item onwards, "The tail of the list"
+print(monday_temperatures[-2:])
+
+print(monday_temperatures[-5:-2])  # prints 1st to 3rd
