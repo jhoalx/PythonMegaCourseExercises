@@ -30,7 +30,7 @@ print(monday_temperatures.index(7.5, 2))
 
 ################################################################################
 # Append item to list
-seconds = [1.2323442655, 1.4534345567, 1.023458894]
+seconds = [1.2323442655, 1.4534345567, 1.023458894, 2.879524862, 1.981751683]
 current = 1.10001399445
 seconds.append(current)
 print(seconds)
@@ -42,3 +42,8 @@ seconds.remove(1.2323442655)
 print(seconds)
 
 ################################################################################
+# Remove 2 items from list
+
+seconds.remove(1.10001399445)
+seconds.remove(2.879524862)
+print(seconds)
