@@ -97,3 +97,16 @@ print(monday_temperatures[-5])  # prints 1st item
 print(monday_temperatures[-2:])
 
 print(monday_temperatures[-5:-2])  # prints 1st to 3rd
+
+################################################################################
+# Accessing Characters and Slices in Strings
+
+myString = "Hello"
+print(myString[1])  # prints "e"
+print(myString[-1])  # prints "o"
+print(myString[:3])  # prints "hel"
+
+# having a mixed object type list
+
+mixedList = ['Hello', 1, 2, 3]
+print(mixedList[0][3:])  # prints "lo"
