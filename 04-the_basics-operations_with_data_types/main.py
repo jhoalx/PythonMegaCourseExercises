@@ -110,3 +110,8 @@ print(myString[:3])  # prints "hel"
 
 mixedList = ['Hello', 1, 2, 3]
 print(mixedList[0][3:])  # prints "lo"
+
+################################################################################
+# SLice of a list, 2nd to 4th
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+print(letters[1:4])
