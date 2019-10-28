@@ -123,3 +123,10 @@ print(letters[:3])
 ################################################################################
 # Slice of a list, Last 3 items
 print(letters[4:])
+
+################################################################################
+# Accessing items in Dictionaries
+student_grades = {"Marry": 9.1, "Sim": 8.8, "John": 7.5}
+print(student_grades["Sim"])
+
+english_to_portuguese = {"rain": "chuva", "sun": "sol"}
