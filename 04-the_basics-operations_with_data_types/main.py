@@ -115,3 +115,7 @@ print(mixedList[0][3:])  # prints "lo"
 # SLice of a list, 2nd to 4th
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 print(letters[1:4])
+
+################################################################################
+# Slice of a list, First 3 items
+print(letters[:3])
