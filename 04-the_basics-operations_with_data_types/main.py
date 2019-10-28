@@ -56,12 +56,14 @@ print(monday_temperatures[1])
 
 ################################################################################
 # Access third item
-serials = ["RH80810A", "AA899819A", "XYSA9099400", "OOP8988459", "EEO8904882", "KOC9889482"]
+serials = ["RH80810A", "AA899819A", "XYSA9099400", "OOP8988459", "EEO8904882",
+           "KOC9889482"]
 print(serials[2])
 
 ################################################################################
 # Access 1st, 3rd, 6th items
-serials = ["RH80810A", "AA899819A", "XYSA9099400", "OOP8988459", "EEO8904882", "KOC9889482"]
+serials = ["RH80810A", "AA899819A", "XYSA9099400", "OOP8988459", "EEO8904882",
+           "KOC9889482"]
 print(serials[0], serials[2], serials[5])
 
 ################################################################################
@@ -130,3 +132,58 @@ student_grades = {"Marry": 9.1, "Sim": 8.8, "John": 7.5}
 print(student_grades["Sim"])
 
 english_to_portuguese = {"rain": "chuva", "sun": "sol"}
+
+################################################################################
+################################################################################
+################################################################################
+################################################################################
+################################################################################
+# Section Wrap Up
+
+# Summary: Positive/Negative Indexes, Slicing
+# In this section you learned that:
+
+# Lists, strings, and tuples have a positive index system:
+
+# ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+#    0      1      2      3      4      5      6
+
+# And a negative index system:
+
+# ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+#   -7     -6     -5     -4     -3     -2     -1
+
+
+# In a list, the 2nd, 3rd, and 4th items can be accessed with:
+days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+print(days[1:4])
+# Output: ['Tue', 'Wed', 'Thu']
+
+# First three items of a list:
+days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+print(days[:3])
+# Output:['Mon', 'Tue', 'Wed']
+
+
+# Last three items of a list:
+days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+print(days[-3:])
+# Output: ['Fri', 'Sat', 'Sun']
+
+
+# Everything but the last:
+days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+print(days[:-1])
+# Output: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+
+
+# Everything but the last two:
+days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+print(days[:-2])
+# Output: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri']
+
+
+# A single in a dictionary can be accessed using its key:
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+print(phone_numbers["Marry Simpsons"])
+# Output: '+423998200919'
