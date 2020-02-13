@@ -32,3 +32,23 @@ def ounces_to_milliliters(ounces: float) -> float:
 
 
 print("5 ounces to milliliters: ", ounces_to_milliliters(5))
+
+
+################################################################################
+
+# Intro to conditionals
+# If
+
+# This mean function will Conditionally operate both for lists and dictionaries values
+def mean(value: list or dict) -> float:
+    if type(value) == dict:
+        result = sum(value.values()) / len(value)
+    elif type(value) == list:
+        result = sum(value) / len(value)
+    else:
+        raise TypeError("Only list or dictionary as parameter")
+    return result
+
+
+student_grades = {"ruben": 9.1, "joan": 9.2, "mauro": 9.3}
+print("student grades mean: ", mean(student_grades))
