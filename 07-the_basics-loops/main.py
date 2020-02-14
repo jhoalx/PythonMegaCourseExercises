@@ -77,3 +77,19 @@ for temperature in monday_temperatures:
 # and in the third celsius_to_kelvin(-270.15).
 
 # That's just something to keep in mind.
+
+
+################################################################################
+
+# Lecture 49 - Looping through a Dictionary
+
+student_grades = {"Valentine": 4.9, "Redfield": 3.9, "Kennedy": 3.1}
+
+for grades in student_grades.items():
+    print(grades)
+
+for grades in student_grades.keys():
+    print(grades)
+
+for grades in student_grades.values():
+    print(grades)
