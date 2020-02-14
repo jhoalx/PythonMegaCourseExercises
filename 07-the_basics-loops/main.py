@@ -35,3 +35,14 @@ colors = [11, 34.1, 98.2, 43, 45.1, 54, 54]
 for color in colors:
     if type(color) == int:
         print(color)
+
+
+################################################################################
+# Exercise 33 - Loop over int and big
+# Loop over the color items and print out the item  in every loop
+# only if the item is an integer
+colors = [11, 34.1, 98.2, 43, 45.1, 54, 54]
+
+for color in colors:
+    if type(color) == int and color > 50:
+        print(color)
