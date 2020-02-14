@@ -37,3 +37,19 @@ print("First string: %s, second string: %s" % (new_string1, new_string2))
 
 # F-string
 print(F"First string: {new_string1}, second string: {new_string2}")
+
+
+################################################################################
+
+# Exercise 28 - String Formatting
+# Implement a function that gets a person's name as parameter and greets the
+# person with "Hi Person". For example, if I called your function with
+# foo("Marry")  the function should return "Hi Marry"
+
+#
+def greet(name: str) -> str:
+    # return "Hi %s" % name
+    return F"Hi {name}"
+
+
+print(greet("john"))
