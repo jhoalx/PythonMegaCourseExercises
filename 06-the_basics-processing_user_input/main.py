@@ -25,3 +25,15 @@ message1 = "Hello %s, nice to meet you" % user_input
 message2 = F"Another greeting {user_input}, have a nice day"
 print(message1)
 print(message2)
+
+################################################################################
+# String formatting with multiple variables
+
+new_string1 = input("please type first string")
+new_string2 = input("please type second string")
+
+# %-formatting, again, not recommended
+print("First string: %s, second string: %s" % (new_string1, new_string2))
+
+# F-string
+print(F"First string: {new_string1}, second string: {new_string2}")
