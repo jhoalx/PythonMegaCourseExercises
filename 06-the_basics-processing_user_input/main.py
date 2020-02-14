@@ -53,3 +53,19 @@ def greet(name: str) -> str:
 
 
 print(greet("john"))
+
+
+################################################################################
+
+# Exercise 29 - String Formatting and Uppercase
+# Implement a function that gets a person's name as parameter and greets
+# the person with "Hi Person" . The first letter should always be uppercase.
+# For example, if I called your function with foo("Marry") or foo("marry")
+# the function should return "Hi Marry" in all cases
+
+def greet2(name: str) -> str:
+    # return "Hi %s" % name.capitalize()
+    return F"Hi {name.capitalize()}"
+
+
+print(greet2("john"))
