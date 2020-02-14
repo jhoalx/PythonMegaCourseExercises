@@ -88,4 +88,25 @@ if x == 1 or y == 2:
 else:
     print("No")
 
+
 # That will return Yes since at least one of the conditions is True. In this case x == 1 is True.
+
+################################################################################
+
+# Password Controller exercise
+# Define a function that:
+#   (1) takes a string as parameter
+#   (2) returns False  if the string contains less than 8 characters
+#   (3) returns True if the string contains 8 or more characters
+#   (4) If I called your function with foo("mypass")  it would return False
+#   If I called it with foo("mylongpassword")  it would return  True and so on
+
+def foo(parameter: str) -> bool:
+    if len(parameter) < 8:
+        return False
+    else:
+        return True
+
+
+print(foo("mypass"))
+print(foo("mylongpassword"))
