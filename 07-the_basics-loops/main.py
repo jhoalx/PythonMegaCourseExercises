@@ -16,7 +16,6 @@ colors = [11, 34, 98, 43, 45, 54, 54]
 for color in colors:
     print(color)
 
-
 ################################################################################
 # Exercise 31 - Loop over big colors
 # Loop over the color items and print out the item in every loop only if the
@@ -25,4 +24,14 @@ colors = [11, 34, 98, 43, 45, 54, 54]
 
 for color in colors:
     if color > 50:
+        print(color)
+
+################################################################################
+# Exercise 32 - Loop over integer colors
+# Loop over the color items and print out the item in every loop only if the
+# item is integer
+colors = [11, 34.1, 98.2, 43, 45.1, 54, 54]
+
+for color in colors:
+    if type(color) == int:
         print(color)
