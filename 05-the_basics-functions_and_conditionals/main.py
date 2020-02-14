@@ -142,3 +142,93 @@ elif x == y:
     print("x is equal to y")
 else:
     print("x is less than y")
+
+
+################################################################################
+
+# Exercise 27 -  Hot, Warm, Cold
+# Define a function that:
+#   (1) takes a temperature as parameter
+#   (2) returns Hot  if the temperature is greater than 25
+#   (3) returns Warm if the temperature is between 15 and 25, including 15 and 25.
+#   (4) returns Cold if the temperature is less than 15.
+
+
+def hot_warm_cold(temp: float) -> str:
+    if temp > 25:
+        return "Hot"
+    elif 15 < temp < 25:  # same as: elif temp > 15 and temp < 25
+        return "Warm"
+    else:
+        return "Cold"
+
+
+################################################################################
+################################################################################
+################################################################################
+################################################################################
+################################################################################
+# Section Wrap Up
+
+# In this section you learned to:
+
+# Define a function
+def cube_volume(a):
+    return a * a * a
+
+
+# Write a conditional block:
+
+message = "hello there"
+
+if "hello" in message:
+    print("hi")
+else:
+    print("I don't understand")
+
+# Write a conditional block of multiple conditions:
+
+message = "hello there"
+
+if "hello" in message:
+    print("hi")
+elif "hi" in message:
+    print("hi")
+elif "hey" in message:
+    print("hi")
+else:
+    print("I don't understand")
+
+# Use the and operator to check if both conditions are True at the same time:
+
+x = 1
+y = 1
+
+if x == 1 and y == 1:
+    print("Yes")
+else:
+    print("No")
+
+# Output is Yes since both x and y are 1.
+
+
+# Use the or operator to check if at least one condition is True
+
+x = 1
+y = 2
+
+if x == 1 or y == 2:
+    print("Yes")
+else:
+    print("No")
+
+# Output is Yes since x is 1.
+
+
+# Check if a value is of a certain type with:
+
+print(isinstance("abc", str))
+print(isinstance([1, 2, 3], list))
+# or
+print(type("abc") == str)
+print(type([1, 2, 3]) == list)
