@@ -116,3 +116,21 @@ for key, value in phone_numbers.items():
 # In both cases the output is:
 # John Smith has as phone number +37682929928
 # Marry Simpons has as phone number +423998200919
+
+
+################################################################################
+
+# Exercise 34 - Loop over dictionary and Format
+# Make the code print out the following output using a for loop:
+# John Smith: +37682929928
+# Marry Simpons: +423998200919
+
+# So, the code should loop over the dictionary items and in each
+# iteration should print out the dictionary key, a colon, a space, and the corresponding  value.
+
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+
+for key, value in phone_numbers.items():
+    print("%s: %s" % (key, value))  # legacy
+    print("{}: {}".format(key, value))  # python 3
+    print(F"{key}: {value}")  # python 3
