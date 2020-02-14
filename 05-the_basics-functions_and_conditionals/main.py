@@ -110,3 +110,22 @@ def foo(parameter: str) -> bool:
 
 print(foo("mypass"))
 print(foo("mylongpassword"))
+
+
+################################################################################
+
+
+# Warm or Cold Exercise
+# Define a function that:
+#   (1) takes a temperature as parameter
+#   (2) returns "Warm" if the temperature is greater than 7
+#   (3) returns "Cold" if the temperature is equal or less than 7
+# If i called the function with foo_two(10) it would return "Warm"
+# If called with foo_two(7) or foo_two(5) it would return "Cold"
+# in both cases and so on.
+
+def foo_two(temp: int) -> str:
+    if temp > 7:
+        return "Warm"
+    else:
+        return "Cold"
