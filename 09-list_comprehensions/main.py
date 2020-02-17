@@ -20,3 +20,14 @@ print(corrected_temperatures)
 
 corrected_temperatures2 = [temp / 10 for temp in stored_temperatures]
 print(corrected_temperatures2)  # prints exactly the same output
+
+
+################################################################################
+
+# Lecture 61 - List Comprehension with If Conditional
+
+stored_temperatures = [221, 234, 0, 340, -9999, 230]  # non valid value included
+
+corrected_temperatures = [temp / 10 for temp in stored_temperatures if temp > 0]
+# Only if the temperature is greater than 0
+print(corrected_temperatures)
