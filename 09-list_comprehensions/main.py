@@ -48,3 +48,19 @@ def foo(input_list: list) -> list:
 
 
 print(foo([99, 'no data', 95, 94, 'no data']))
+
+
+################################################################################
+
+# Exercise 37 - Only Positive Numbers
+
+# Define a function that takes as parameter list of numbers and returns
+# the list containing only the numbers that are greater than 0.
+# For example, I called your function with foo2([-5, 3, -1, 101])
+#  it should return [3, 101]
+
+def foo2(input_list: list) -> list:
+    return [val for val in input_list if val > 0]
+
+
+print(foo2([-5, 3, -1, 101]))
