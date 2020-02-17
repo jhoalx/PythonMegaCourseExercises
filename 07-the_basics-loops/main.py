@@ -155,3 +155,12 @@ a: int = 3
 while a < 10:
     print(a)
     a += 1
+
+################################################################################
+
+# Lecture 52 - While Loop Example with User Input
+
+user_name = ""
+
+while user_name != "jhoal":
+    user_name = input("please enter 'jhoal' to continue executing the script ")
