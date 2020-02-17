@@ -164,3 +164,14 @@ user_name = ""
 
 while user_name != "jhoal":
     user_name = input("please enter 'jhoal' to continue executing the script ")
+
+################################################################################
+
+# Lecture 53 - While Loops with Break and Continue
+
+while True:
+    user_name = input("Enter 'jhoal' to continue script execution")
+    if user_name == 'jhoal':
+        break
+    else:
+        continue
