@@ -134,3 +134,14 @@ for key, value in phone_numbers.items():
     print("%s: %s" % (key, value))  # legacy
     print("{}: {}".format(key, value))  # python 3
     print(F"{key}: {value}")  # python 3
+
+################################################################################
+
+# Exercise 35
+# Loop over the phone_numbers values and in each loop print out the phone
+# number, but with '00' instead of '+'. In other words, your code should output:
+
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+
+for num in phone_numbers.values():
+    print(num.replace('+', '00'))
