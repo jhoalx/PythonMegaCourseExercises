@@ -74,3 +74,20 @@ stored_temperatures = [221, 234, 0, 340, -9999, 230]
 
 new_temps = [temp / 10 if temp > 0 else 0 for temp in stored_temperatures]
 print(new_temps)
+
+
+################################################################################
+
+# Exercise 38 - Zeros Instead
+
+# Define a function that takes as parameter a list that contains both
+# numbers and strings and returns the same list but with zeros
+# instead of strings. For example, I called your function with
+# foo([99, 'no data', 95, 94, 'no data'])
+# it should return [99, 0, 95, 94, 0]
+
+def foo3(input_list: list) -> list:
+    return [val if isinstance(val, int) else 0 for val in input_list]
+
+
+print(foo3([99, 'no data', 95, 94, 'no data']))
