@@ -145,3 +145,13 @@ phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
 
 for num in phone_numbers.values():
     print(num.replace('+', '00'))
+
+################################################################################
+
+# Lecture 51 - While Loops: How and Why
+
+a: int = 3
+
+while a < 10:
+    print(a)
+    a += 1
