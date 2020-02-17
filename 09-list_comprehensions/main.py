@@ -64,3 +64,13 @@ def foo2(input_list: list) -> list:
 
 
 print(foo2([-5, 3, -1, 101]))
+
+################################################################################
+
+# Lecture 62 - List Comprehension with If-Else Conditional
+
+# When using if-else conditional, the for loop is moved to the end
+stored_temperatures = [221, 234, 0, 340, -9999, 230]
+
+new_temps = [temp / 10 if temp > 0 else 0 for temp in stored_temperatures]
+print(new_temps)
