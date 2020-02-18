@@ -20,3 +20,19 @@ def foo(param_a: str, param_b: str) -> str:
 
 
 print(foo("first, ", "second, "))
+################################################################################
+# Lecture 66 - Default and Non-default Parameters and Keyword and
+# Non-Keyword Arguments.
+
+# With Keyword Arguments the position does not matter
+print(foo(param_b="first, ", param_a="second, "))
+
+
+# You can specify default parameter values
+def foo2(param_a="Hi", param_b="User") -> str:
+    return param_a + param_b
+
+
+# Default parameter value *With Typehint*
+def foo3(param_a: str = "Hi", param_b: str = "User") -> str:
+    return param_a + param_b
