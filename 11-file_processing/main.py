@@ -40,3 +40,13 @@ file_contents = file.read()
 
 file.close()
 print(file_contents)
+
+################################################################################
+
+# Exercise 45 - Reading and Processing Text
+
+# Read the bear.txt  file, and print out the first 90 characters of its content.
+
+file = open("bear.txt")
+print(file.read()[:91])
+file.close()
