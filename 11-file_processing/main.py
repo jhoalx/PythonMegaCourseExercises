@@ -84,3 +84,14 @@ with open("files/lorem_ricksum.txt") as lorem_ricksum:
     rick_text = lorem_ricksum.read()
 
 print(rick_text)
+
+################################################################################
+
+# Lecture 76 - Writing Text to a File
+
+help(open)
+
+# if the file exists, it'll be overwritten
+with open("vegetables.txt", "w") as my_file:
+    my_file.write('Tomato\nCucumber')  # notice \n (new line)
+    my_file.write('\nGarlic')
