@@ -10,3 +10,13 @@ print(type(my_file))  # <class '_io.TextIOWrapper'>
 # commonly used methods of _io.TextIOWrapper class.
 
 print(my_file.read())
+
+################################################################################
+
+# Exercise 44 - Read Text From File and Print
+
+# On the current folder there's a bear.txt file.
+# read and print out the content
+
+file = open("bear.txt")
+print(file.read())
