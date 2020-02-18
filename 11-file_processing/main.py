@@ -20,3 +20,10 @@ print(my_file.read())
 
 file = open("bear.txt")
 print(file.read())
+
+################################################################################
+
+# Lecture 72 - File Cursor
+
+# .read() method moves the cursor to the end of the file
+# file contents can be stored to a variable
