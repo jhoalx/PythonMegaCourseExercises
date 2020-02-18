@@ -20,6 +20,7 @@ def foo(param_a: str, param_b: str) -> str:
 
 
 print(foo("first, ", "second, "))
+
 ################################################################################
 # Lecture 66 - Default and Non-default Parameters and Keyword and
 # Non-Keyword Arguments.
@@ -36,3 +37,14 @@ def foo2(param_a="Hi", param_b="User") -> str:
 # Default parameter value *With Typehint*
 def foo3(param_a: str = "Hi", param_b: str = "User") -> str:
     return param_a + param_b
+
+
+################################################################################
+
+# Lecture 67 - Functions with an Arbitrary Number of Non-keyword Arguments
+
+def mean(*arguments):
+    return sum(arguments) / len(arguments)
+
+
+print(mean(1, 2, 3, 6, 9))
