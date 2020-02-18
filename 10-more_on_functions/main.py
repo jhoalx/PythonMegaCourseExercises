@@ -48,3 +48,14 @@ def mean(*arguments):
 
 
 print(mean(1, 2, 3, 6, 9))
+
+
+################################################################################
+
+# Exercise 41 - Average Function
+# Define a function that takes an indefinite number of numbers as arguments and
+# returns their average. If I called your function with foo(10, 20, 30, 40)
+# it should return the 25, the average of those numbers.
+
+def average(*args):
+    return sum(args) / len(args)
