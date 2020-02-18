@@ -27,3 +27,16 @@ print(file.read())
 
 # .read() method moves the cursor to the end of the file
 # file contents can be stored to a variable
+file = open("bear.txt")
+file_contents = file.read()
+
+################################################################################
+
+# Lecture 73 - Closing a File
+
+# When reading files, an object is created in RAM, it remains there until
+# the execution of the program ends, a good practice is to close it
+# once the needed processing is complete (lecture 72)
+
+file.close()
+print(file_contents)
