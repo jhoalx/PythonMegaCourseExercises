@@ -50,3 +50,18 @@ print(file_contents)
 file = open("bear.txt")
 print(file.read()[:91])
 file.close()
+
+
+################################################################################
+
+# Exercise 46 - File Processing Inside Function
+# Define a function that gets a single string character and a filepath as
+# parameters and returns the number of occurrences of that character in the file
+
+def foo(char: str, file_path: str) -> int:
+    file_open = open(file_path)
+    file_text = file_open.read()
+    return file_text.count(char)
+
+
+print(foo('a', "bear.txt"))
