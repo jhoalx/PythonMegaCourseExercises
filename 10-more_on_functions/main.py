@@ -59,3 +59,20 @@ print(mean(1, 2, 3, 6, 9))
 
 def average(*args):
     return sum(args) / len(args)
+
+
+################################################################################
+
+# Exercise 42 - Indefinite Number of Strings Processed
+# Define a function that takes an indefinite number of strings as parameters
+# and returns a list containing all the strings in UPPERCASE and sorted
+# alphabetically. For example, if I called your function with
+# foo("snow", "glacier", "iceberg")  it should return
+# ["GLACIER", "ICEBERG", "SNOW"]
+
+
+def upper_sorted(*args: str) -> list:
+    return sorted([text.upper() for text in args])
+
+
+print(upper_sorted("snow", "glacier", "iceberg"))
