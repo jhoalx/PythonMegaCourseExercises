@@ -76,3 +76,17 @@ def upper_sorted(*args: str) -> list:
 
 
 print(upper_sorted("snow", "glacier", "iceberg"))
+
+
+################################################################################
+
+# Lecture 68 - Functions with an Arbitrary Number of Keyword Arguments
+
+def foo4(**kwargs):  # notice the two asterisks (**)
+    return kwargs
+
+
+# print(foo4(1, 2, 3)) # produces an error, arguments should have keyword
+
+# All arguments must be named (keyword)
+print(foo4(a=1, b=2, c=3))  # returns a dictionary
