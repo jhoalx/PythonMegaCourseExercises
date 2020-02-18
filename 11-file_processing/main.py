@@ -75,3 +75,12 @@ with open("fruits.txt") as my_file:
     content = my_file.read()
 
 print(content)
+
+################################################################################
+
+# Lecture 75 - Different Filepaths
+
+with open("files/lorem_ricksum.txt") as lorem_ricksum:
+    rick_text = lorem_ricksum.read()
+
+print(rick_text)
