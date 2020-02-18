@@ -65,3 +65,13 @@ def foo(char: str, file_path: str) -> int:
 
 
 print(foo('a', "bear.txt"))
+
+################################################################################
+
+# Lecture 74 - Opening Files Using "with" context manager
+# the context manager ("with") will apply close method automatically
+
+with open("fruits.txt") as my_file:
+    content = my_file.read()
+
+print(content)
