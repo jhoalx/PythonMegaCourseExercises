@@ -89,7 +89,7 @@ print(rick_text)
 
 # Lecture 76 - Writing Text to a File
 
-help(open)
+# help(open)
 
 # if the file exists, it'll be overwritten
 with open("vegetables.txt", "w") as my_file:
@@ -117,4 +117,17 @@ with open('bear.txt') as bear_txt:
     with open('first.txt', 'w') as first_txt:
         first_txt.write(bear_txt.read()[:90])
 
+################################################################################
 
+# Lecture 77 - Appending Text to an Existing File
+
+
+with open('fruits.txt', 'a') as fruits_file:  # 'a' for append mode (no read)
+    fruits_file.write('\nStrawberry')
+
+with open('fruits.txt', 'a+') as fruits_file:  # 'a+' for append and read mode
+    fruits_file.write('\nCherry')
+    fruits_file.seek(0)  # put the cursor at the 0 position of the file
+    result = fruits_file.read()
+
+print(result)
