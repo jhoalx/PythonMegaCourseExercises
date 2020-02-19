@@ -142,3 +142,31 @@ print(result)
 with open('bear1.txt') as source_file:
     with open('bear2.txt', 'a+') as destination:
         destination.write(source_file.read())
+
+################################################################################
+
+# Exercise 50 - Copy n-times
+
+# The existing content of data.txt looks like this:
+# 1.3, 1.5
+# 2.3, 2.7
+
+# Use Python to modify the content of data.txt
+# so that its content looks like below:
+
+# 1.3, 1.5
+# 2.3, 2.7
+# 1.3, 1.5
+# 2.3, 2.7
+# 1.3, 1.5
+# 2.3, 2.7
+
+# So, you need to find a way to insert the existing content two more times.
+
+with open('data.txt', 'a+') as data:
+    data.seek(0)
+    content = data.read()
+    data.write("\n" + content)
+    data.write("\n" + content)
+
+print(content)
