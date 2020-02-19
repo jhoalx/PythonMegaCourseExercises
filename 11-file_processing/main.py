@@ -95,3 +95,11 @@ help(open)
 with open("vegetables.txt", "w") as my_file:
     my_file.write('Tomato\nCucumber')  # notice \n (new line)
     my_file.write('\nGarlic')
+
+################################################################################
+
+# Exercise 47 - Write Snail
+
+# Use Python to create a file with name 'file.txt'  and write 'snail' there
+with open('file.txt', 'w') as new_file:
+    new_file.write('snail')
