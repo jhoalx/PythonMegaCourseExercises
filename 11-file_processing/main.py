@@ -131,3 +131,14 @@ with open('fruits.txt', 'a+') as fruits_file:  # 'a+' for append and read mode
     result = fruits_file.read()
 
 print(result)
+
+################################################################################
+
+# Exercise 49 - Read and Append
+
+# Append the text of 'bear1.txt' to 'bear2.txt'. In other words, 'bear2.txt'
+# should contain its text and the text of 'bear1.txt' after that
+
+with open('bear1.txt') as source_file:
+    with open('bear2.txt', 'a+') as destination:
+        destination.write(source_file.read())
