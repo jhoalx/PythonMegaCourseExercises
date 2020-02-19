@@ -103,3 +103,18 @@ with open("vegetables.txt", "w") as my_file:
 # Use Python to create a file with name 'file.txt'  and write 'snail' there
 with open('file.txt', 'w') as new_file:
     new_file.write('snail')
+
+################################################################################
+
+# Exercise 48 - Write First 90
+
+# Create a 'first.txt' file that contains the first 90 characters of 'bear.txt'
+# Note that you should read the content of 'bear.txt' with Python,
+# extract its first 90 characters with Python,
+# and write those characters in 'first.txt' with Python.
+
+with open('bear.txt') as bear_txt:
+    with open('first.txt', 'w') as first_txt:
+        first_txt.write(bear_txt.read()[:90])
+
+
